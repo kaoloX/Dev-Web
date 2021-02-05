@@ -15,6 +15,12 @@
     --font-action: "Josefin Slab", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+/*Scroll-behavior - suaviza a barra de rolagem e a troca de páginas.*/
+
 .hamburguer {
     width: 2rem;
     height: 2rem;
@@ -176,6 +182,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar{
@@ -306,7 +313,8 @@ li{
 
 .conhecimento-text{
     font-family: var(--font-secundary);
-    margin-top: 1rem;
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
 }
 
 .conhecimentos-img-wrapper{
@@ -317,12 +325,13 @@ li{
 
 .conhecimentos-img-wrapper img{
     object-fit: cover;
-    width: 100%;
+    width: 80%;
 }
 
 .projetos{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 9.3rem;
 
 }
 
@@ -567,3 +576,52 @@ li{
     grid-column: 2;
 
 }
+
+footer {
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    background: #6a3093;  
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  
+    background: linear-gradient(to right, #a044ff, #6a3093);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem #00000009;
+}
+
